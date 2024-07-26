@@ -84,7 +84,7 @@ function StickyBottomNavigation() {
         </div>
       )} */}
       <div className="w-full gap-x-2 max-md:gap-1 gap-y-2 rounded-[var(--border-radius--menu-link)] bg-[#1a1b1e] justify-between flex overflow-auto p-3 max-sm:p-2 transition-custom">
-        <a href="/" className="menuLink">
+        <a href="#" className="menuLink">
           Home
         </a>
 
@@ -92,8 +92,8 @@ function StickyBottomNavigation() {
           About
         </a>
 
-        <a href="/works" className="menuLink">
-          Works
+        <a href="#features" className="menuLink">
+          Features
         </a>
 
 
