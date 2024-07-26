@@ -24,7 +24,7 @@ function StickyBottomNavigation() {
     setLearnVisible(!learnVisible);
   };
 
-  const handleClick = (e) => {
+ /*  const handleClick = (e) => {
     e.preventDefault();
     if (learnVisible) {
       root.style.setProperty("--border-radius--menu-wrapper", "50px");
@@ -35,10 +35,10 @@ function StickyBottomNavigation() {
     }
     toggleLearnVisibility();
   };
-
+ */
   return (
     <nav className=" fixed bottom-12 max-w-full gap-x-2 gap-y-2 rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#222325] transition-custom ">
-      {learnVisible && (
+     {/*  {learnVisible && (
         <div className="max-w-full gap-x-6 gap-y-6 bg-[#1a1b1e] flex-col flex overflow-hidden p-0 rounded-[23px] animateNav transition-custom">
           <div className="text-[#313235] text-[10px] leading-[120%] mt-6 mx-6 pb-[13px] border-b-[#222325] border-b border-solid">
             LEARN
@@ -82,7 +82,7 @@ function StickyBottomNavigation() {
             </a>
           </div>
         </div>
-      )}
+      )} */}
       <div className="w-full gap-x-2 max-md:gap-1 gap-y-2 rounded-[var(--border-radius--menu-link)] bg-[#1a1b1e] justify-between flex overflow-auto p-3 max-sm:p-2 transition-custom">
         <a href="/" className="menuLink">
           Home
@@ -96,15 +96,12 @@ function StickyBottomNavigation() {
           Works
         </a>
 
-        <button className="menuLink" onClick={handleClick}>
-          Learn <Arrow />
-        </button>
 
         <a
           href="/contact"
           className="menuLink bg-[#36353a] hover:text-[#111] hover:bg-[#fff]"
         >
-          Let's Talk
+          About Me
         </a>
       </div>
     </nav>
