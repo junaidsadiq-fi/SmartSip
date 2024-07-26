@@ -88,7 +88,7 @@ function StickyBottomNavigation() {
           Home
         </a>
 
-        <a href="/about" className="menuLink">
+        <a href="#about" className="menuLink">
           About
         </a>
 

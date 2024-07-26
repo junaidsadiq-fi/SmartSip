@@ -1,13 +1,20 @@
 import StickyBottomNavigation from "@/components/StickyBottomNavigation";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Footer from "@/components/Footer";
 import Image from "next/image";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
+    <>
     <div className="bg-black min-h-screen flex flex-col w-full text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
-          <div className="order-2 lg:order-1 lg:mt-32 sm:mb-40 flex gap-4 flex-col items-center">
+        <Spotlight
+            className="-top-40 left-0 md:left-60 md:-top-20"
+            fill="white"
+          />
+          <div className="order-2 lg:order-1 lg:mt-60 sm:mb-40 flex gap-4 flex-col items-center">
             <a
               href="#"
               target="_blank"
@@ -15,8 +22,8 @@ export default function Home() {
             >
               Created by Abdullah Asim.
             </a>
-            <h1 className="text-center text-6xl tracking-tighter font-bold">
-              Smart Sip <br /> advanced water bottle
+            <h1 className="text-center text-6xl tracking-tighter font-bold pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
+              Smart Sip <br /> advance water bottle
             </h1>
             <p className="text-[#666] ">
               concept by <a href="#">abdullah asim</a>
@@ -35,5 +42,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
