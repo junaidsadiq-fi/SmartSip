@@ -4,6 +4,8 @@ import "./globals.css";
 import StickyBottomNavigation from "@/components/StickyBottomNavigation";
 import Footer from "@/components/Footer";
 import {About} from "@/components/About";
+import { Features } from "@/components/Features";
+import { NewFeaturesGrid } from "@/components/NewFeaturesGrid";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,6 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <About/>
+        <NewFeaturesGrid/>
+        <Features/>
         <Footer/>
         <div className="flex justify-center items-center">
         <StickyBottomNavigation />
