@@ -7,7 +7,7 @@ import Image from "next/image";
 const FooterComponent = () => {
   return (
     <>
-    <footer id="about" className="relative sm:h-screen overflow-hidden pt-60 bg-black">
+    <footer id="contact" className="relative sm:h-screen overflow-hidden pt-60 bg-black">
       <div id="container" className="relative px-12 sm:px-4 overflow-hidden w-full h-full">
         <div className="flex flex-col sm:flex-row items-center justify-around mx-64 mb-2 sm:gap-1">
           <div className="w-full h-full justify-center items-center sm:flex-row mb-2 sm:mb-0">

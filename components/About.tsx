@@ -1,7 +1,7 @@
 
 
 export const About = () => (
-  <div className="bg-gray-950 w-full py-1 lg:py-1">
+  <div id="about" className="bg-gray-950 w-full py-1 lg:py-1">
     <div className="mx-1">
       <div className="flex bg-black flex-col text-center bg-muted rounded-md gap-2 items-center min-w-full">
       <div className="absolute px-4 pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>

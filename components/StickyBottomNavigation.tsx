@@ -1,5 +1,3 @@
-"use client";
-import React, { useState } from "react";
 import Image from "next/image";
 
 const Arrow = ({ ...props }) => {
@@ -19,11 +17,7 @@ const Arrow = ({ ...props }) => {
 };
 
 function StickyBottomNavigation() {
-  const [learnVisible, setLearnVisible] = useState(false);
 
-  const toggleLearnVisibility = () => {
-    setLearnVisible(!learnVisible);
-  };
 
   return (
     <nav className="fixed bottom-12 max-w-full gap-x-2 gap-y-2 rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#222325] transition-custom">
@@ -50,7 +44,7 @@ function StickyBottomNavigation() {
         </a>
 
         <a
-          href="/contact"
+          href="#contact"
           className="menuLink bg-[#36353a] hover:text-[#111] hover:bg-[#fff]"
         >
           About Me
