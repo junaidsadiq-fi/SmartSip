@@ -14,10 +14,11 @@ export default function Home() {
             alt="Site Logo"
             width={150}
             height={150}
+            className="w-32 h-32 sm:w-42 sm:h-42 lg:w-48 lg:h-48" 
           />
         </div>
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 items-center justify-center lg:grid-cols-2">
            {/*  <Spotlight
               className="-top-40 left-0 md:left-60 md:-top-20"
               fill="white"
