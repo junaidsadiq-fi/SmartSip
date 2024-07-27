@@ -2,7 +2,7 @@ import { useId } from "react";
 
 export function Features() {
   return (
-    <div id="features" className="bg-black py-20 lg:py-40">
+    <div id="features" className="bg-black py-20 px-20 lg:py-40">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div

@@ -1,6 +1,8 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
 import { Spotlight } from "@/components/ui/Spotlight";
+import ShootingStars from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 
 export default function Home() {
   return (
@@ -8,19 +10,19 @@ export default function Home() {
       <div className="bg-black min-h-screen flex flex-col w-full text-white relative">
         <div className="absolute top-10 left-20">
           <Image
-            src="/images/transparentlogo.png"
+            src="/images/whiteLogo.png"
             alt="Site Logo"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
         </div>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
-            <Spotlight
+           {/*  <Spotlight
               className="-top-40 left-0 md:left-60 md:-top-20"
               fill="white"
-            />
-            <div className="order-2 lg:order-1 lg:mt-60 sm:mb-40 flex gap-4 flex-col items-center">
+            /> */}
+            <div className="order-2 lg:order-1 lg:mt-60 sm:mb-10 flex gap-4 flex-col items-center">
               <a
                 href="#"
                 target="_blank"
@@ -47,6 +49,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <ShootingStars className="footer-shooting-stars" />
+        <StarsBackground className="footer-stars-background" />
       </div>
     </>
   );
