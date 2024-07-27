@@ -30,10 +30,10 @@ function StickyBottomNavigation() {
       <div className="w-full flex gap-x-2 max-md:gap-1 gap-y-2 rounded-[var(--border-radius--menu-link)] bg-[#1a1b1e] justify-between items-center overflow-auto p-3 max-sm:p-2 transition-custom">
       <div className="flex items-center ml-auto">
           <Image
-            src="/images/transparentlogo.png" // Update this with your actual logo path
+            src="/images/transparentlogo.png" 
             alt="Site Logo"
-            width={40} // Set appropriate width
-            height={40} // Set appropriate height
+            width={40} 
+            height={40}
             className="ml-4"
           />
         </div>
